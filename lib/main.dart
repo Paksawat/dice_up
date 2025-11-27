@@ -199,7 +199,7 @@ class _DiceViewerPageState extends State<DiceViewerPage>
               );
             },
           ),
-          if (kIsWeb)
+          if (kIsWeb && !isStandalone())
             IconButton(
               icon: const Icon(Icons.download),
               tooltip: 'Install App',
